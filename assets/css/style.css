@@ -641,9 +641,9 @@ main {
  * #service 
  */
 
-.service { margin-bottom: 35px; }
+.service { margin-bottom: 30px; }
 
-.service-title { margin-bottom: 20px; }
+.service-title { margin-bottom: 20px; display: flex; align-items: center; }
 
 .service-list {
   display: grid;
@@ -697,6 +697,12 @@ main {
    grid-template-columns: 1fr;
    gap: 20px;
  }
+
+ .news-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
  
  .publications-item {
    position: relative;
@@ -785,6 +791,25 @@ main {
     line-height: 1.6;
   }
 
+  .publications-news-item-journal {
+    text-align: justify;
+    text-justify: inter-word;
+    color: var(--light-gray);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-3);
+    line-height: 1.6;
+  }
+
+  .publications-news-item-journal-link { 
+    text-align: justify;
+    text-justify: inter-word;
+    color: var(--vegas-gold);
+    display: inline;
+    font-size: var(--fs-9);
+    font-weight: var(--fw-3);
+    line-height: 1.6;
+  }
+
   .publications-item-download { 
     margin: auto;
     text-align: center;
@@ -798,6 +823,22 @@ main {
     width: max-content;
     padding: 3px 12px;
     margin-bottom: 10px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+
+  .publications-item-presented { 
+    margin: auto;
+    text-align: center;
+    padding: 5px 18px;
+    color: var(--white-1);
+    display: inline;
+    font-size: var(--fs-9);
+    line-height: 1.3;
+    background: var(--onyx);
+    width: max-content;
+    padding: 3px 12px;
+    margin-bottom: 1px;
     border-radius: 8px;
     display: inline-block;
   }
@@ -816,9 +857,9 @@ main {
  * #testimonials 
  */
 
-.testimonials { margin-bottom: 30px; }
+.testimonials { margin-bottom: 0px; }
 
-.testimonials-title { margin-bottom: 20px; }
+.testimonials-title { margin-bottom: 20px;  display: flex; align-items: center; }
 
 .testimonials-list {
   display: grid;
@@ -853,6 +894,8 @@ main {
 .testimonials-item-title { margin-bottom: 7px; text-align: justify; text-justify: inter-word;}
 
 .testimonials-item-subtitle { margin-bottom: 7px; font-size: var(--fs-8); color: var(--light-gray); text-align: justify; text-justify: inter-word;}
+
+.testimonials-item-text { margin-bottom: 7px; font-size: var(--fs-9); color: var(--light-gray); text-align: justify; text-justify: inter-word;}
 
 .testimonials-text {
   text-align: justify;
@@ -1312,7 +1355,14 @@ main {
 
 .project-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.conferences-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   margin-bottom: 10px;
 }
@@ -1320,6 +1370,11 @@ main {
 .project-item { display: none; }
 
 .project-item.active {
+  display: block;
+  animation: scaleUp 0.25s ease forwards;
+}
+
+.publications-item.active {
   display: block;
   animation: scaleUp 0.25s ease forwards;
 }
@@ -1371,9 +1426,30 @@ main {
   transition: var(--transition-1);
 }
 
+.conferences-item-icon-box {
+  --scale: 0.8;
+
+  background: var(--jet);
+  color: var(--orange-yellow-crayola);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(var(--scale));
+  font-size: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  opacity: 0;
+  z-index: 1;
+  transition: var(--transition-1);
+}
 
 .project-item > a:hover .project-item-icon-box {
   --scale: 1;
+  opacity: 1;
+}
+
+.project-item > a:hover .conferences-item-icon-box {
+  --scale: 0.4;
   opacity: 1;
 }
 
@@ -1389,16 +1465,26 @@ main {
 .project-item > a:hover img { transform: scale(1.1); }
 
 .project-title,
+.conferences-title,
 .project-category { margin-left: 10px; }
 .project-date { margin-left: 10px; }
 .project-material { margin-left: 10px; }
 
 .project-title {
-  text-align: justify;
+  text-align: left;
   text-justify: inter-word;
   color: var(--white-2);
   font-style: italic;
   font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  line-height: 1.3;
+}
+
+.conferences-title {
+  text-align: left;
+  text-justify: inter-word;
+  color: var(--white-2);
+  font-size: var(--fs-9);
   font-weight: var(--fw-300);
   line-height: 1.3;
 }
@@ -1595,6 +1681,15 @@ main {
   display: grid;
   grid-template-columns: 1fr;
    gap: 3px;
+}
+
+.contactsectioncontent-tweet {
+  display: grid;
+  grid-template-columns: 1fr;
+   gap: 3px;
+   text-align: justify;
+   text-justify: auto;
+   align-items: left;
 }
 
 .contactsectioncontent-listsocialmedia {
@@ -1938,7 +2033,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .about .article-title { margin-bottom: 20px; }
 
-  .about-text { margin-bottom: 40px; }
+  .about-text { margin-bottom: 30px; }
 
   /* service */
 
@@ -1983,9 +2078,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;  
-    margin: 0 -30px;
+    margin: -40px -30px;
     padding: 30px;
-    padding-bottom: 35px;
+    padding-bottom: 70px;
   }
 
   .content-card {
@@ -2049,7 +2144,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
-    margin: 0 -30px;
+    margin: -50px -30px;
     padding: 45px;
     scroll-padding-inline: 45px;
   }
@@ -2198,7 +2293,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* portfolio and blog grid */
 
-  .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
+  .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .conferences-list { grid-template-columns: 1fr 1fr 1fr 1fr; }
 
 
 
@@ -2309,9 +2405,14 @@ textarea.form-input::-webkit-resizer { display: none; }
     gap: 20px 25px;
   }
 
+  .news-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+  }
+
   /* testimonials */
 
-  .testimonials-item { min-width: calc(50% - 15px); }
+  .testimonials-item { min-width: calc(10% - 15px); }
 
   /* clients */
 
@@ -2323,6 +2424,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   display: grid;
   grid-template-columns: 1fr 1fr;
    gap: 3px;
+}
+
+.contactsectioncontent-tweet {
+  display: grid;
+  grid-template-columns: 1fr;
+   gap: 3px;
+   text-align: justify;
+   text-justify: auto;
+   align-items: left;
 }
 
 .contactsectioncontent-listsocialmedia {
@@ -2355,8 +2465,8 @@ textarea.form-input::-webkit-resizer { display: none; }
    * PORTFOLIO
    */
 
-  .project-list { grid-template-columns: repeat(4, 1fr); }
-
+  .project-list { grid-template-columns: repeat(5, 1fr); }
+  .conferences-list { grid-template-columns: repeat(5, 1fr); }
 
 
   /**
