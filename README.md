@@ -12,7 +12,7 @@
 
 | 📈 Research Fields | 🛠️ Technical Interests |
 | -------- | ----------- |
-| `Public Economics` `Public Finance` `Taxation` `Inequality`  | `Micro-Data` `Micro-Simulation` `Computational Economics` [`QuantEcon`](https://quantecon.org/) `Machine Learning`  | 
+| `Public Finance` `Taxation` `Household Finance` `Inequality` `Public Economics`  | `Causal Inference` `Micro-Simulation` `Linked Admin Micro-Data` `Survey Micro-Data` | 
 
 ## </> Computer Literacy
 
@@ -31,12 +31,12 @@
 
 #### Mail
 <a href="mailto:darioserrapuente@gmail.com" target="_blank"><img alt="Gmail" src="https://img.shields.io/badge/darioserrapuente(at)gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white"></a>
-<a href="mailto:dario.serrano@ub.edu" target="_blank"><img alt="Gmail" src="https://img.shields.io/badge/dario.serrano(at)ub.edu-0078D4?style=flat-square&logo=microsoft-outlook&logoColor=white"></a>
+<a href="mailto:dario.serrano@ub.edu" target="_blank"><img alt="Gmail" src="https://img.shields.io/badge/dario.serrano(at)ub.edu-0078D4?style=flat-square&logo=maildotru&logoColor=white"></a>
 
 #### Social Media
 <a href="https://www.linkedin.com/in/serranopuente" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/serranopuente-0077B5?style=flat-square&logo=Linkedin&logoColor=white"></a>
-<a href="https://twitter.com/darioserranopue" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/@darioserranopue-1DA1F2?style=flat-square&logo=twitter&logoColor=white"></a>
-<a href="https://econtwitter.net/@serranopuente" target="_blank"><img alt="Mastodon" src="https://img.shields.io/badge/econtwitter.net/@serranopuente-6364FF?style=flat-square&logo=Mastodon&logoColor=white"></a>
+<a href="https://twitter.com/darioserranopue" target="_blank"><img alt="Twitter" src="https://img.shields.io/badge/@darioserranopue-1DA1F2?style=flat-square&logo=X&logoColor=white"></a>
+<a href="https://bsky.app/profile/serranopuente.eu" target="_blank"><img alt="BlueSky" src="https://img.shields.io/badge/@serranopuente.eu-6364FF?style=flat-square&logo=BlueSky&logoColor=white"></a>
 <a href="https://github.com/serranopuente" target="_blank"><img alt="GitHub" src="https://img.shields.io/badge/serranopuente-181717?style=flat-square&logo=github&logoColor=white"></a>
 
 #### Research Profiles
